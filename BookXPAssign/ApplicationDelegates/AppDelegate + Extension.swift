@@ -2,7 +2,7 @@
 //  AppDelegate + Extension.swift
 //  BookXPAssign
 //
-//  Created by vikash kumar on 22/06/25.
+//  Created by Pradyumna Rout on 22/06/25.
 //
 
 import Foundation
@@ -10,7 +10,7 @@ import UserNotifications
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
     
-    // Request User Permisson
+    // Request User Permisson for push notificaion.
     func requestNotificationPerfmission() {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {

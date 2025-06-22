@@ -2,7 +2,7 @@
 //  AuthViewModel.swift
 //  BookXPAssign
 //
-//  Created by vikash kumar on 21/06/25.
+//  Created by Pradyumna Rout on 21/06/25.
 //
 
 import Foundation
@@ -25,7 +25,7 @@ class AuthenticationViewModel: ObservableObject {
     
     init() {
         userData = CoreDataManager.shared.fetchOnlyUSer()
-        debugPrint("===== User data \(userData) =====")
+        debugPrint("===== User data \(String(describing: userData)) =====")
         authState = userData != nil ? .signedIn : .signedOut
     }
     
