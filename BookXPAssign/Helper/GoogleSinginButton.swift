@@ -8,6 +8,7 @@
 import SwiftUI
 import GoogleSignIn
 
+// Google Sign In button using UIViewRepresentable
 struct GoogleSignInButton: UIViewRepresentable {
     @Environment(\.colorScheme) var colorScheme
     
