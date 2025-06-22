@@ -25,7 +25,7 @@ class AuthenticationViewModel: ObservableObject {
     
     init() {
         userData = CoreDataManager.shared.fetchOnlyUSer()
-        debugPrint("===== User data \(userData) =====")
+        debugPrint("===== User data \(String(describing: userData)) =====")
         authState = userData != nil ? .signedIn : .signedOut
     }
     
